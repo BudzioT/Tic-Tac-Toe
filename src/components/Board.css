@@ -1,0 +1,63 @@
+.board {
+    display: inline-block;
+    margin-top: 5%;
+    padding: 50px;
+
+    background-color: #fbfbfb;
+    border: #FFFFFF 3px solid;
+    border-radius: 10%;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+
+    float: left;
+
+    border: rgba(0, 0, 0, 40%) 1px solid;
+    border-collapse: collapse;
+
+    background-color: white;
+    font-size: xxx-large;
+    font-weight: bold;
+    text-shadow: gray 2px 2px;
+}
+
+.board-row:after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+
+.status {
+    font-family: Algerian, Arial, serif;
+    font-size: xxx-large;
+    color: #FFFFFF;
+    text-shadow: gray 3px 2px;
+}
+
+.move-history > li {
+    margin-top: 5px;
+}
+
+.move-history > li > button {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: #FFFFFF 2px solid;
+}
+
+@media (max-width: 700px) {
+    .square {
+        width: 50px;
+        height: 50px;
+        font-size: x-large;
+    }
+
+    .status {
+        font-size: x-large;
+    }
+
+    .board {
+        padding: 30px;
+    }
+}
